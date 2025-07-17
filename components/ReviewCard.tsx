@@ -34,7 +34,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
               {review.metadata.customer_name}
             </p>
             <p className="text-sm text-gray-600">
-              {review.metadata.product.metadata.product_name}
+              {review.metadata.product?.metadata?.product_name || 'Unknown Product'}
             </p>
           </div>
           {review.metadata.verified_purchase && (

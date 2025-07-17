@@ -65,7 +65,9 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         
         <div className="mb-6">
           <h3 className="text-lg font-semibold mb-2">Category</h3>
-          <p className="text-gray-600">{product.metadata.category.metadata.category_name}</p>
+          <p className="text-gray-600">
+            {product.metadata.category?.metadata?.category_name || 'Uncategorized'}
+          </p>
         </div>
         
         <button 
