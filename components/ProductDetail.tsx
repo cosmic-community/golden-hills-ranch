@@ -13,7 +13,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         {images.length > 0 && (
           <div className="space-y-4">
             <img
-              src={`${images[0].imgix_url}?w=800&h=600&fit=crop&auto=format,compress`}
+              src={`${images[0]?.imgix_url}?w=800&h=600&fit=crop&auto=format,compress`}
               alt={product.metadata.product_name}
               className="w-full h-96 object-cover rounded-lg"
             />

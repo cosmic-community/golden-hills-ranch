@@ -46,7 +46,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
         {review.metadata.review_photos && review.metadata.review_photos.length > 0 && (
           <div className="mt-4">
             <img
-              src={`${review.metadata.review_photos[0].imgix_url}?w=400&h=300&fit=crop&auto=format,compress`}
+              src={`${review.metadata.review_photos[0]?.imgix_url}?w=400&h=300&fit=crop&auto=format,compress`}
               alt="Customer review photo"
               className="w-full h-32 object-cover rounded-lg"
             />
