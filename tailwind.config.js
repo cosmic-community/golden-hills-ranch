@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        border: 'hsl(var(--border))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         ranch: {
           50: '#fef7ed',
           100: '#fdedd3',
